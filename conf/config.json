@@ -1,30 +1,122 @@
 {
   "port": {
-    "owen": {},
-    "pchv": {},
-    "gen": {},
-    "freq": {}
+    "owen": {
+      "text": "Ввод-вывод",
+      "port": "COM1",
+      "baud": 38400,
+      "timeout": 0.1
+    },
+    "pchv": {
+      "text": "ПЧВ",
+      "port": "COM2",
+      "baud": 38400,
+      "timeout": 0.1
+    },
+    "gen": {
+      "text": "Генератор",
+      "port": "COM4",
+      "baud": 115200,
+      "timeout": 0.1
+    },
+    "freq": {
+      "text": "Частотомер",
+      "port": "COM7",
+      "baud": 38400,
+      "timeout": 0.1
+    }
   },
   "device": {
-    "ai": {},
-    "di": {},
-    "do1": {},
-    "do2": {},
-    "ao": {},
-    "pchv": {},
-    "freq": {},
-    "gen": {},
-    "pa1": {},
-    "pa2": {},
-    "pa3": {},
-    "pv1": {},
-    "pv2": {}
+    "ai": {
+      "text": "Аналоговый ввод",
+      "port": "owen",
+      "unit": 8
+    },
+    "di": {
+      "text": "Дискретный ввод",
+      "port": "owen",
+      "unit": 9
+    },
+    "do1": {
+      "text": "Дискретный вывод 1",
+      "port": "owen",
+      "unit": 1
+    },
+    "do2": {
+      "text": "Дискретный вывод 2",
+      "port": "owen",
+      "unit": 5
+    },
+    "ao": {
+      "text": "Аналоговый вывод",
+      "port": "owen",
+      "unit": 6
+    },
+    "pchv": {
+      "text": "ПЧВ",
+      "port": "pchv",
+      "unit": 2
+    },
+    "freq": {
+      "text": "Частотомер",
+      "port": "freq",
+      "unit": 3
+    },
+    "gen": {
+      "text": "Генератор",
+      "port": "gen",
+      "unit": 100
+    },
+    "pa1": {
+      "text": "PA1",
+      "port": "owen",
+      "unit": 21
+    },
+    "pa2": {
+      "text": "PA2",
+      "port": "owen",
+      "unit": 22
+    },
+    "pa3": {
+      "text": "PA3",
+      "port": "owen",
+      "unit": 23
+    },
+    "pv1": {
+      "text": "PV1",
+      "port": "owen",
+      "unit": 11
+    },
+    "pv2": {
+      "text": "PV2",
+      "port": "owen",
+      "unit": 12
+    }
   },
   "controls": {
-    "up": {},
-    "down": {},
-    "yes": {},
-    "no": {},
-    "back": {}
+    "up": {
+      "text": "ВВЕРХ",
+      "device": "di",
+      "pin": 4
+    },
+    "down": {
+      "text": "ВНИЗ",
+      "device": "di",
+      "pin": 7
+    },
+    "yes": {
+      "text": "ДА",
+      "device": "di",
+      "pin": 5
+    },
+    "no": {
+      "text": "НЕТ",
+      "device": "di",
+      "pin": 8
+    },
+    "back": {
+      "text": "НАЗАД",
+      "device": "di",
+      "pin": 6
+    }
   }
 }
