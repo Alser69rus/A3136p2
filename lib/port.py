@@ -2,6 +2,15 @@ from PyQt5.QtCore import QObject, QThread, pyqtSignal
 from pymodbus.client.sync import ModbusSerialClient as SerialClient
 
 
+class PortFactory():
+    @staticmethod
+    def create_port(config: dict):
+        port_type = config.get('type', 'modbus_rtu')
+        port_reg = {'modbus_rtu': ModBusRTUSerialPort}
+        port = port_reg.get(port_type, ModBusRTUSerialPort)
+        return port(config)
+
+
 class PortHandler(QObject):
     started = pyqtSignal()
     finished = pyqtSignal()

@@ -1,24 +1,28 @@
 {
   "port": {
     "owen": {
+      "type": "modbus_rtu",
       "text": "Ввод-вывод",
       "port": "COM1",
       "baud": 38400,
       "timeout": 0.1
     },
     "pchv": {
+      "type": "modbus_rtu",
       "text": "ПЧВ",
       "port": "COM2",
       "baud": 38400,
       "timeout": 0.1
     },
     "gen": {
+      "type": "modbus_rtu",
       "text": "Генератор",
       "port": "COM4",
       "baud": 115200,
       "timeout": 0.1
     },
     "freq": {
+      "type": "modbus_rtu",
       "text": "Частотомер",
       "port": "COM7",
       "baud": 38400,
